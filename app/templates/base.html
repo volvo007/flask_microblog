@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {%if title %}
+            <title>{{title}} - Microblog</title>
+        {%else%}
+            <title>Welcome - Microblog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Microblog: <a href="/index"></a></div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
